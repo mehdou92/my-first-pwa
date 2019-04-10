@@ -1,4 +1,4 @@
-import { default as Card, initCard } from '/js/components/card/card.js';
+import { default as Card, initCard } from './components/card/card.js';
 
 (async function (document) {
   const app = document.querySelector('#app');
@@ -10,11 +10,11 @@ import { default as Card, initCard } from '/js/components/card/card.js';
 
   const link = document.createElement('link');
   link.rel = 'stylesheet';
-  link.href= '/js/components/card/card.css';
+  link.href= './js/components/card/card.css';
   document.head.appendChild(link);
 
   try {
-    const data = await fetch('/data/spacex.json');
+    const data = await fetch('./data/spacex.json');
     const json = await data.json();
     
     const cards = json.map(item => {

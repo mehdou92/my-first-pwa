@@ -1,0 +1,15 @@
+{
+  "name": "iw-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "generate": "npx workbox generateSW",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "https://github.com/syu93/iw-2.git",
+  "author": "Mehdi <mehdiab92@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "workbox-cli": "^4.2.0"
+  }
+}
